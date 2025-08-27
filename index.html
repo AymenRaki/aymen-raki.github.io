@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aymen RAKI - Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+            <div class="gradient-text font-bold text-xl">AYMEN.DEV</div>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#accueil" class="hover:text-purple-400 transition-colors">Accueil</a>
+                <a href="#competences" class="hover:text-purple-400 transition-colors">Compétences</a>
+                <a href="#projets" class="hover:text-purple-400 transition-colors">Projets</a>
+                <a href="#formation" class="hover:text-purple-400 transition-colors">Formation</a>
+                <a href="#stage" class="hover:text-purple-400 transition-colors">Stage</a>
+                <a href="#contact" class="hover:text-purple-400 transition-colors">Contact</a>
+                <button class="close-menu hidden md:hidden">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <button id="mobile-menu" class="md:hidden">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </div>
+</nav>
+
+    <button class="close-menu hidden md:hidden">
+        <i class="fas fa-times"></i>
+    </button>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="min-h-screen flex items-center justify-center px-4 relative">
+        <div class="absolute top-20 left-20 w-20 h-20 bg-purple-500 rounded-full opacity-20 floating"></div>
+        <div class="absolute bottom-20 right-20 w-32 h-32 bg-blue-500 rounded-full opacity-20 floating" style="animation-delay: -3s;"></div>
+        
+        <div class="text-center z-10 max-w-4xl mx-auto fade-in visible">
+            <div class="mb-8">
+                
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                Salut, je suis <span class="gradient-text">Aymen</span>
+            </h1>
+            
+            <div class="text-xl md:text-2xl mb-8">
+                <span id="typed-text" class="typing">Développeur Web & Mobile</span>
+            </div>
+            
+            <p class="text-lg text-gray-300 mb-12 max-w-2xl mx-auto">
+                Étudiant en 3ème année de Licence Informatique - parcours informatiques des systèmes embarqués (ISEI - Université Paris 8). Passionné par le développement web/mobile, les systèmes embarqués et la data science. À la recherche d’un stage à partir du mai 2026 (2 mois minimum).
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#projets" class="gradient-bg px-8 py-4 rounded-full font-semibold hover:scale-105 transition-transform">
+                    Voir mes projets
+                </a>
+                <a href="#contact" class="border-2 border-purple-400 px-8 py-4 rounded-full font-semibold hover:bg-purple-400 hover:text-gray-900 transition-colors">
+                    Me contacter
+                </a>
+                <a href="./docs/Aymen_RAKI_CV.pdf" download="./docs/Aymen_RAKI_CV.pdf" class="border-2 border-purple-400 px-8 py-4 rounded-full font-semibold hover:bg-purple-400 hover:text-gray-900 transition-colors">
+                    Télécharger mon CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section id="competences" class="py-20 px-4">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">Compétences</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in">
+                    <div class="text-3xl mb-4">💻</div>
+                    <h3 class="text-xl font-semibold mb-4">Langages</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Java</span>                                
+                            </div>                            
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Python</span>                                
+                            </div>                            
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>JavaScript</span>                                
+                            </div>                            
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Kotlin</span>                                
+                            </div>
+                            
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>C</span>                                
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>PHP</span>                                
+                            </div>                            
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>Prolog</span>                                
+                            </div>                            
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span>x86 Assembleur</span>                                
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in" style="transition-delay: 0.1s;">
+                    <div class="text-3xl mb-4">🌐</div>
+                    <h3 class="text-xl font-semibold mb-4">Développement Web</h3>
+                    <div class="grid grid-cols-2 gap-2">
+                        <span class="bg-purple-600 px-3 py-2 rounded-full text-sm text-center">HTML</span>
+                        <span class="bg-blue-600 px-3 py-2 rounded-full text-sm text-center">CSS</span>
+                        <span class="bg-green-600 px-3 py-2 rounded-full text-sm text-center">JavaScript</span>
+                        <span class="bg-yellow-600 px-3 py-2 rounded-full text-sm text-center">XML</span>
+                        <span class="bg-yellow-600 px-3 py-2 rounded-full text-sm text-center">PhpMyAdmin</span>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in" style="transition-delay: 0.1s;">
+                    <div class="text-3xl mb-4">🌐</div>
+                    <h3 class="text-xl font-semibold mb-4">Développement Web</h3>
+                    <div class="grid grid-cols-2 gap-2">
+                        <span class="bg-purple-600 px-3 py-2 rounded-full text-sm text-center">Android studio</span>
+                        <span class="bg-blue-600 px-3 py-2 rounded-full text-sm text-center">SDK Android</span>
+                        <span class="bg-green-600 px-3 py-2 rounded-full text-sm text-center">Gradle</span>
+                        <span class="bg-yellow-600 px-3 py-2 rounded-full text-sm text-center">SQLite</span>
+                        <span class="bg-yellow-600 px-3 py-2 rounded-full text-sm text-center">Jetpack composer</span>
+                        <span class="bg-yellow-600 px-3 py-2 rounded-full text-sm text-center">Architecture MVVM</span>
+                        <span class="bg-yellow-600 px-3 py-2 rounded-full text-sm text-center">Firebase</span>
+                    </div>
+                </div>                                
+                
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in" style="transition-delay: 0.3s;">
+                    <div class="text-3xl mb-4">🛠️</div>
+                    <h3 class="text-xl font-semibold mb-4">Développement Logiciels</h3>
+                    <div class="space-y-2 text-sm">
+                        <div>Programmation orientée objet (POO)</div>
+                        <div>Architecture MVC</div>
+                        <div>UML</div>    
+                        <div>Java Swing</div>  
+                        <div>Ergonomie</div>                    
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in" style="transition-delay: 0.4s;">
+                    <div class="text-3xl mb-4">🐍</div>
+                    <h3 class="text-xl font-semibold mb-4">Bibliothèques & Outils Python</h3>
+                    <div class="space-y-2 text-sm">
+                        <div>NumPy</div>
+                        <div>Pandas</div>
+                        <div>Matplotib</div>
+                        <div>sklearn</div>
+                        <div>Scipy</div>
+                        <div>Jupyter notebook</div>
+                        <div>Google colab</div>
+                    </div>
+                </div>
+                
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in" style="transition-delay: 0.6s;">
+                    <div class="text-3xl mb-4">⚙️</div>
+                    <h3 class="text-xl font-semibold mb-4">Systèmes & Outils</h3>
+                    <div class="space-y-2 text-sm">
+                        <div>Linux (Ubuntu/Kali)</div>
+                        <div>Virtualisation</div>
+                        <div>LaTeX</div>
+                        <div>Git/Github</div>
+                        <div>Cisco</div>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in" style="transition-delay: 0.2s;">
+                    <div class="text-3xl mb-4">🗃️</div>
+                    <h3 class="text-xl font-semibold mb-4">Bases de données</h3>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-3 h-3 bg-orange-500 rounded-full"></div>
+                            <span>SQL</span>
+                        </div>   
+                        <div class="flex items-center gap-3">
+                            <div class="w-3 h-3 bg-orange-500 rounded-full"></div>
+                            <span>MySQL</span>
+                        </div>     
+                        <div class="flex items-center gap-3">
+                            <div class="w-3 h-3 bg-orange-500 rounded-full"></div>
+                            <span>Microsoft SQL Server</span>
+                        </div>                                                                                                 
+                    </div>
+                </div>                
+
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in" style="transition-delay: 0.4s;">
+                    <div class="text-3xl mb-4">🌍</div>
+                    <h3 class="text-xl font-semibold mb-4">Langues</h3>
+                    <div class="space-y-3">
+                        <div class="flex justify-between items-center">
+                            <span>Arabe</span>                            
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Français</span>                        
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <span>Anglais</span>                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in" style="transition-delay: 0.5s;">
+                    <div class="text-3xl mb-4">🎯</div>
+                    <h3 class="text-xl font-semibold mb-4">Atouts</h3>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span>Créativité</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span>Résolution de problèmes</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span>Esprit critique</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span>Travail d'équipe</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span>Apprentissage rapide</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-check text-green-400"></i>
+                            <span>Autonomie</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Section -->
+    <section id="projets" class="py-20 px-4 bg-black/20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">Mes Projets</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="project-card rounded-2xl p-6 card-hover fade-in" style="transition-delay: 0.1s;">
+                    <div class="text-4xl mb-4">🏠</div>
+                    <h3 class="text-xl font-semibold mb-3">Application Mobile Immobilière</h3>
+                    <p class="text-gray-300 mb-4">
+                        Plateforme innovante avec géolocalisation en temps réel utilisant Google Maps SDK, authentification Firebase et base de données Firestore. Interface moderne avec publication, filtrage et consultation d'annonces via carte interactive.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-green-600 px-2 py-1 rounded text-xs">Android SDK</span>
+                        <span class="bg-yellow-600 px-2 py-1 rounded text-xs">Firebase Auth</span>
+                        <span class="bg-blue-600 px-2 py-1 rounded text-xs">Google Maps</span>
+                        <span class="bg-orange-600 px-2 py-1 rounded text-xs">Firestore</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-purple-400 hover:text-purple-300 transition-colors">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </a>                        
+                    </div>
+                </div>
+
+                <div class="project-card rounded-2xl p-6 card-hover fade-in" style="transition-delay: 0.2s;">
+                    <div class="text-4xl mb-4">🎮</div>
+                    <h3 class="text-xl font-semibold mb-3">Tic-Tac-Toe IA MinMax</h3>
+                    <p class="text-gray-300 mb-4">
+                        Jeu interactif développé en Java Swing avec intelligence artificielle basée sur l'algorithme MinMax. Modes joueur vs IA et joueur vs joueur avec interface ergonomique et gestion des états de jeu (victoire, égalité, redémarrage).
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-orange-600 px-2 py-1 rounded text-xs">Java</span>
+                        <span class="bg-red-600 px-2 py-1 rounded text-xs">Swing</span>
+                        <span class="bg-purple-600 px-2 py-1 rounded text-xs">IA MinMax</span>
+                        <span class="bg-indigo-600 px-2 py-1 rounded text-xs">MVC</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-purple-400 hover:text-purple-300 transition-colors">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </a>                        
+                    </div>
+                </div>
+
+                <div class="project-card rounded-2xl p-6 card-hover fade-in" style="transition-delay: 0.3s;">
+                    <div class="text-4xl mb-4">📝</div>
+                    <h3 class="text-xl font-semibold mb-3">Analyseur Lexical & Syntaxique</h3>
+                    <p class="text-gray-300 mb-4">
+                        Outil de compilation développé en Java Swing capable d'identifier les tokens, valider la grammaire d'un langage simplifié et détecter les erreurs syntaxiques. Interface graphique interactive pour la saisie et l'affichage des résultats d'analyse.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-orange-600 px-2 py-1 rounded text-xs">Java</span>
+                        <span class="bg-red-600 px-2 py-1 rounded text-xs">Swing</span>
+                        <span class="bg-green-600 px-2 py-1 rounded text-xs">Compilateurs</span>
+                        <span class="bg-pink-600 px-2 py-1 rounded text-xs">Regex</span>
+                    </div>
+                    <div class="flex gap-4">
+                        <a href="#" class="text-purple-400 hover:text-purple-300 transition-colors">
+                            <i class="fab fa-github mr-2"></i>Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section id="formation" class="py-20 px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">Formation</h2>
+            
+            <div class="space-y-8">
+                <div class="card-hover bg-white/5 rounded-2xl p-6 border-l-4 border-purple-500 fade-in" style="transition-delay: 0.1s;">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <h3 class="text-xl font-semibold">L3 Licence - Informatiques des systèmes embarqués (ISEI)</h3>
+                        <span class="text-purple-400 font-medium">2025</span>
+                    </div>
+                    <p class="text-gray-300 mb-2">
+                        <i class="fas fa-university mr-2"></i>Université Paris 8 • 2 Rue de la Liberté, 93200 Saint-Denis, France
+                    </p>
+                    <p class="text-sm text-gray-400">
+                        Formation spécialisée en systèmes embarqués, développement logiciel avancé et intelligence artificielle.
+                    </p>
+                </div>
+
+                <div class="card-hover bg-white/5 rounded-2xl p-6 border-l-4 border-blue-500 fade-in" style="transition-delay: 0.2s;">
+                    <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+                        <h3 class="text-xl font-semibold">Licence Informatique - Systèmes Informatiques</h3>
+                        <span class="text-blue-400 font-medium">2022 - 2025</span>
+                    </div>
+                    <p class="text-gray-300 mb-2">
+                        <i class="fas fa-university mr-2"></i>Université Akli Mohand Oulhadj • Bouira, Algérie
+                    </p>
+                    <div class="bg-green-500/20 border border-green-500/30 rounded-lg p-3 mb-2">
+                        <div class="text-green-400 font-medium flex items-center">
+                            <i class="fas fa-trophy mr-2"></i>Excellents résultats académiques (15,48/20 - 2e de promotion)
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-400">
+                        Cursus complet en informatique avec spécialisation en développement web/mobile, bases de données, réseaux et systèmes.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stage Section -->
+    <section id="stage" class="py-20 px-4 bg-black/20">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold text-center mb-16 gradient-text">Stage</h2>
+            
+            <div class="grid md:grid-cols-1 gap-8">
+                <div class="project-card rounded-2xl p-6 card-hover fade-in" style="transition-delay: 0.1s;">
+                    <div class="text-4xl mb-4">💼</div>
+                    <h3 class="text-xl font-semibold mb-3">Stage - Algérie Télécom</h3>
+                    <p class="text-gray-300 mb-4">
+                        Stage de 5 mois en développement et maintenance des systèmes d'information, gestion réseau et bases de données. Contribution active à la modernisation technologique et travail en équipe pluridisciplinaire dans le secteur des télécommunications.
+                    </p>
+                    <div class="flex flex-wrap gap-2 mb-4">
+                        <span class="bg-blue-600 px-2 py-1 rounded text-xs">Réseaux</span>
+                        <span class="bg-green-600 px-2 py-1 rounded text-xs">BDD</span>
+                        <span class="bg-purple-600 px-2 py-1 rounded text-xs">Maintenance SI</span>
+                        <span class="bg-yellow-600 px-2 py-1 rounded text-xs">Télécoms</span>
+                    </div>
+                    <div class="text-sm text-gray-400">
+                        <i class="fas fa-calendar mr-2"></i>01/2025 - 05/2025 • Bouira, Algérie
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-black/20">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 gradient-text">Contactez-moi</h2>
+            <p class="text-xl text-gray-300 mb-12">
+                Prêt à discuter de votre prochain projet ou opportunité de stage ?
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in" style="transition-delay: 0.1s;">
+                    <i class="fas fa-envelope text-3xl gradient-text mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Email</h3>
+                    <p class="text-gray-300">aymen.raki.cs@gmail.com</p>
+                </div>
+                
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in" style="transition-delay: 0.2s;">
+                    <i class="fas fa-map-marker-alt text-3xl gradient-text mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">Localisation</h3>
+                    <p class="text-gray-300">Aubervilliers (93300), Paris</p>
+                </div>
+                
+                <div class="card-hover bg-white/5 rounded-2xl p-6 fade-in" style="transition-delay: 0.3s;">
+                    <i class="fab fa-linkedin text-3xl gradient-text mb-4"></i>
+                    <h3 class="text-lg font-semibold mb-2">LinkedIn</h3>
+                    <p class="text-gray-300">aymen-raki-4a2505255</p>
+                </div>
+            </div>
+            
+            <div class="max-w-2xl mx-auto mb-8">
+                <div class="bg-white/5 rounded-2xl p-8 backdrop-blur-lg fade-in" style="transition-delay: 0.4s;">
+                    <h3 class="text-2xl font-semibold mb-6">Envoyez-moi un message</h3>
+                    <form id="contactForm" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Nom</label>
+                                <input type="text" name="name" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors text-white" placeholder="Votre nom">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium mb-2">Email</label>
+                                <input type="email" name="email" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors text-white" placeholder="votre@email.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Sujet</label>
+                            <input type="text" name="subject" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors text-white" placeholder="Sujet de votre message">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium mb-2">Message</label>
+                            <textarea rows="5" name="message" required class="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-colors resize-none text-white" placeholder="Votre message..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full gradient-bg py-3 rounded-lg font-semibold hover:scale-105 transition-transform">
+                            <i class="fas fa-paper-plane mr-2"></i>Envoyer le message
+                        </button>
+                    </form>
+                    <p id="formMessage" class="text-center mt-4 text-green-400 hidden">Message envoyé avec succès !</p>
+                </div>
+            </div>
+            
+            <div>
+                <a href="mailto:aymen.raki.cs@gmail.com" class="gradient-bg px-12 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-transform inline-block">
+                    <i class="fas fa-envelope mr-2"></i>Contactez-moi directement
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 px-4 bg-gray-900 text-gray-400">
+        <div class="max-w-4xl mx-auto text-center">
+            <p class="mb-4">&copy; 2025 Aymen RAKI. Tous droits réservés.</p>
+            <div class="flex justify-center space-x-6">
+                <a href="mailto:aymen.raki.cs@gmail.com" class="hover:text-purple-400 transition-colors">
+                    <i class="fas fa-envelope text-xl"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/aymen-raki-4a2505255" target="_blank" class="hover:text-purple-400 transition-colors">
+                    <i class="fab fa-linkedin text-xl"></i>
+                </a>
+                <a href="tel:+33778150964" class="hover:text-purple-400 transition-colors">
+                    <i class="fas fa-phone text-xl"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</html>

@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f0f23;
+            color: white;
+            scroll-behavior: smooth; /* Smooth scrolling for navigation */
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .glass {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+        
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .typing::after {
+            content: '|';
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+        
+        .skill-bar {
+            background: rgba(255, 255, 255, 0.1);
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        
+        .skill-progress {
+            height: 100%;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 4px;
+            transition: width 2s ease;
+        }
+        
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(20px);
+        }
+        
+        /* Navigation animation */
+        nav a {
+            position: relative;
+            text-decoration: none;
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: #667eea;
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+
+/* Mobile Navigation */
+@media (max-width: 767px) {
+    nav .md\\:flex {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(15, 15, 35, 0.95); /* Darker background with slight transparency */
+        backdrop-filter: blur(15px); /* Enhanced glassmorphism */
+        padding: 5rem 1rem 2rem;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 100;
+    }
+    nav .md\\:flex.visible {
+        display: flex;
+        transform: translateX(0);
+    }
+    nav a {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: white;
+        text-align: center;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+    nav a:hover {
+        color: #667eea;
+    }
+    nav a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: 0.5rem;
+        left: 50%;
+        transform: translateX(-50%);
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        transition: width 0.3s ease;
+    }
+    nav a:hover::after {
+        width: 50%;
+    }
+    #mobile-menu {
+        display: block;
+        z-index: 110;
+    }
+    .hamburger {
+        width: 30px;
+        height: 20px;
+        position: relative;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+    .hamburger span {
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        background: linear-gradient(90deg, #667eea, #764ba2); /* Gradient for hamburger lines */
+        border-radius: 3px;
+        opacity: 1;
+        left: 0;
+        transition: all 0.3s ease;
+    }
+    .hamburger span:nth-child(1) {
+        top: 0;
+    }
+    .hamburger span:nth-child(2) {
+        top: 8px;
+    }
+    .hamburger span:nth-child(3) {
+        top: 16px;
+    }
+    .hamburger.active span:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        top: 8px;
+    }
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+        top: 8px;
+    }
+    /* Close Button Styles */
+    .close-menu {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0.5rem;
+        z-index: 120;
+        transition: transform 0.3s ease;
+    }
+    .close-menu:hover {
+        transform: scale(1.1);
+    }
+    .close-menu i {
+        font-size: 2rem;
+        background: linear-gradient(90deg, #667eea, #764ba2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
+/* Ensure desktop menu remains unchanged */
+@media (min-width: 768px) {
+    #mobile-menu {
+        display: none;
+    }
+    nav .md\\:flex {
+        display: flex !important;
+        transform: none;
+        position: static;
+        height: auto;
+        background: none;
+        backdrop-filter: none;
+        padding: 0;
+    }
+    .close-menu {
+        display: none;
+    }
+}
